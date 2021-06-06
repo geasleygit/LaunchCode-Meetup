@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>NWA LaunchCode Graduation Celebration</h1>
+    <body>
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+      <div id="wrapper">
+        <h1>Please answer the following questions:</h1>
+        <p></p>
+        
+        <form id="question">
+          <!-- Question 1 -->
+          <h2>What refreshments/menu items would you prefer?</h2>
+      
+          <label><input type="radio" name="q1" value="c1">
+            Southern Style BBQ with all the fixins
+          </label><br />
+          <label><input type="radio" name="q1" value="c2">
+            Fresh Vegetables, Nuts and Fruits
+          </label><br />
+          <label><input type="radio" name="q1" value="c3">
+            Punch and Pie
+          </label><br />
+          <label><input type="radio" name="q1" value="c4">
+            Tacos, Tacos, Tacos
+          </label><br />
+      
+          <!-- Question 2 -->
+          <h2>Where would you like to meet?</h2>
+      
+          <label><input type="radio" name="q2" value="c1">
+            Lake Atalanta Park
+          </label><br />
+          <label><input type="radio" name="q2" value="c2">
+            Wilson Park
+          </label><br />
+          <label><input type="radio" name="q2" value="c3">
+            Hobbs State Park
+          </label><br />
+          <label><input type="radio" name="q2" value="c4">
+            The Moon
+          </label><br />
+          
+          <!-- Question 3 -->
+          <h2>Which dates are best for you?</h2>
+      
+          <label><input type="radio" name="q3" value="c1">
+            Weekend of May 7-9
+          </label><br />
+          <label><input type="radio" name="q3" value="c2">
+            Weekend of May 14-16
+          </label><br />
+          <label><input type="radio" name="q3" value="c3">
+            Weekend of May 21-23
+          </label><br />
+          <label><input type="radio" name="q3" value="c4">
+            Weekend of May 28-30
+          </label><br />
+          
+          <!-- Question 4 -->
+          <h2>Who dis?</h2>
+      
+          <label><input type="radio" name="q4" value="c1">
+            
+          </label><br />
+          
+          <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+        <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+        </form>
+        
+        
+        <div id="answer">Thanks! I'll get back to you with the details.</div>
+      </div>
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+      <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBSQ8iTv2jmRo3xVZqJN3udv21rVxIrWQ8",
+          authDomain: "launchcodemeetupnwa.firebaseapp.com",
+          projectId: "launchcodemeetupnwa",
+          storageBucket: "launchcodemeetupnwa.appspot.com",
+          messagingSenderId: "478826927832",
+          appId: "1:478826927832:web:dc384404d74ff0b281a9ad",
+          measurementId: "G-PRMYQLKVSS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        // let db =  firebase.firestore();
+        // db.collection("formData").add({
+        //   date:"lrbrjb",
+        //   location:"jebjbj",
+        //   menu:"nejbe",
+        //   name:"Sabrinaaaa"
+        // })
+      </script>
+    
+  </body>
+</html>
